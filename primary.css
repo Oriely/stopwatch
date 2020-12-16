@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
     background:rgb(218, 100, 5);
-    
 }
 
 section {
@@ -30,14 +29,18 @@ h1 {
     padding:10px;
     outline:none;
     border:none;
-    width:100px;
-    height:50px;
     color:white;
-    background:rgba(0, 0, 0, 0.459);
+    font-size:6em;
+    border-radius:25px;
+    background:inherit;
 }
 
 .past-times {
-    width:25%;
+    width:350px;
+    overflow-y: scroll;
+    height:400px;
+    display:flex;
+    flex-direction: column-reverse;
 }
 
 .past-times span {
@@ -50,10 +53,27 @@ h1 {
 .past-times span:nth-child(odd) {
     background:rgba(0, 0, 0, 0.137);
 }
+
+.past-times h5 {
+    margin:5px 5px 5px 0;
+}
+
 .past-times p {
     display:inline;
 }
 
-svg {
+.controls svg {
+    background:rgba(0, 0, 0, 0.459);
+    padding:3px;
+    border-radius:50px;
+    color:white;
+}
+
+.past-times svg {
+
     padding-right:1%;
+}
+
+.time-display {
+    font-size:2.5em;
 }
